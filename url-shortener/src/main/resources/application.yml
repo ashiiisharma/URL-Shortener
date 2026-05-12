@@ -1,0 +1,51 @@
+# # server
+# # (app port)
+# server:
+#   port: 8080
+
+# # spring.datasource
+# # (postgreSQL connection)
+# spring:
+#   datasource:
+    
+
+# # spring.jpa
+# # (for jpa/hibernate behaviour)
+
+# # spring.data.redis
+# # (for redis host and port)
+
+
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/url_shortener_db
+    username: url_shortener_usr
+    password: url_shortener_pw01
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# optional custom app settings for later
+app:
+  base-url: <BASE_URL>
+  short-code:
+    length: <SHORT_CODE_LENGTH>
+  rate-limit:
+    create-url:
+      max-requests: <MAX_REQUESTS>
+      window-minutes: <WINDOW_MINUTES>

@@ -1,0 +1,34 @@
+'Project structure: `
+
+url-shortener/
+  src/main/java/com/example/urlshortener/
+    controller/
+      UrlController.java
+      RedirectController.java
+    service/
+      UrlService.java
+      RedirectService.java
+      CacheService.java
+      RateLimiterService.java
+    repository/
+      ShortUrlRepository.java
+    entity/
+      ShortUrl.java
+    dto/
+      CreateShortUrlRequest.java
+      ShortUrlResponse.java
+      UrlAnalyticsResponse.java
+    exception/
+      GlobalExceptionHandler.java
+      ResourceNotFoundException.java
+      UrlExpiredException.java
+      RateLimitExceededException.java
+    util/
+      ShortCodeGenerator.java
+    config/
+      RedisConfig.java
+  src/main/resources/
+    application.yml
+  Dockerfile
+  compose.yaml
+  pom.xml

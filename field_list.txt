@@ -1,0 +1,32 @@
+
+##entity
+ShortUrl
+- id : Long
+- shortCode : String
+- originalUrl : String
+- createdAt : Instant
+- expiresAt : Instant
+- clickCount : Long
+- lastAccessedAt : Instant
+
+
+##dto
+CreateShortUrlRequest
+- originalUrl : String
+- expiresAt : Instant
+
+CreateShortUrlResponse
+- shortCode : String
+- shortUrl : String
+- originalUrl : String
+- createdAt : Instant
+- expiresAt : Instant
+
+UrlAnalyticsResponse
+- shortCode : String
+- originalUrl : String
+- clickCount : Long
+- createdAt : Instant
+- lastAccessedAt : Instant
+- expiresAt : Instant
+
