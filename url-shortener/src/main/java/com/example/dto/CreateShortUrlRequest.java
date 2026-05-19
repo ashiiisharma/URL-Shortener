@@ -10,7 +10,7 @@ public class CreateShortUrlRequest {
     private String originalUrl;
     private LocalDateTime expiresAt;
 
-    private CreateShortUrlRequest(){
+    public CreateShortUrlRequest(){
     }
 
     public String getOriginalUrl(){
@@ -22,6 +22,9 @@ public class CreateShortUrlRequest {
 
     public LocalDateTime getExpiresAt(){
         return expiresAt;
+    }
+    public void setExpiresAt(LocalDateTime expiresAt){
+        this.expiresAt = expiresAt;
     }
     
 }

@@ -1,2 +1,6 @@
 app:
   base-url: http://localhost:8080
+  rate-limit:
+    create-url:
+      max-requests: 5
+      window-minutes: 1

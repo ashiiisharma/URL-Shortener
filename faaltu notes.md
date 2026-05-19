@@ -32,3 +32,12 @@ url-shortener/
   Dockerfile
   compose.yaml
   pom.xml
+
+
+
+
+  may 14 26, 6.55pm:
+  logging work
+  added function in shorturlservice
+
+  have to start from redirect controller
